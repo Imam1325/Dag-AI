@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dag AI - Telegram Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dag AI</h1>
+            <p>Ваш умный помощник в Telegram</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>О боте</h2>
+            <p>Dag AI — это мощный Telegram-бот, который помогает вам с искусственным интеллектом, автоматизацией задач и многим другим. Просто добавьте его в свои контакты и начните использовать!</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Возможности</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🤖 ИИ-ассистент</h3>
+                    <p>Отвечает на вопросы, помогает с решениями и учится у вас.</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ Автоматизация</h3>
+                    <p>Автоматизируйте рутинные задачи с помощью Dag AI.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔒 Безопасность</h3>
+                    <p>Ваши данные защищены и никогда не передаются третьим лицам.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container">
+            <h2>Начните использовать Dag AI прямо сейчас!</h2>
+            <a href="https://t.me/dag_ai_bot" class="btn">Добавить бота</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dag AI. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
