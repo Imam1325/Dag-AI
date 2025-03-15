@@ -11,7 +11,6 @@ load_dotenv()
 
 
 token = getenv("TELEGRAM_TOKEN")
-gemini_api_key = getenv("GEMINI_API_KEY")
 
 def get_send_message(chat_id, text):
     payload = {
@@ -28,12 +27,7 @@ def index():
         chat_id = data['message']['chat']['id']
         text = data['message']['text']
 
-        client = genai.Client(api_key=gemini_api_key)
-        response = client.models.generate_content(
-           model="gemini-2.0-flash",
-           contents=text
-        )
-        get_send_message(chat_id, response.text)   
+         
 
     return render_template("index.html")
 
